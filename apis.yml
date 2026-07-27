@@ -1,8 +1,27 @@
 aid: gitprime
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gitprime.png
 name: Gitprime
-description: Gitprime is a company surfaced as a portfolio company of dcvc, y-combinator and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  GitPrime was a software engineering analytics and developer-productivity company founded in 2015
+  in Durango, Colorado, backed by Y Combinator and DCVC. Its product mined data from Git repositories,
+  code review, and ticketing systems to give engineering leaders visibility into team throughput,
+  code churn, and delivery health. Pluralsight acquired GitPrime in 2019 (~$170M) and rebranded it as
+  Pluralsight Flow; in February 2025 Appfire acquired Flow from Pluralsight, and Appfire has announced
+  that Flow will be discontinued on December 31, 2027. The independent gitprime.com domain no longer
+  resolves and www.gitprime.com redirects to appfire.com/flow/info, so there is no standalone GitPrime
+  developer portal, public API, or specification to enrich; any surviving API functionality now lives
+  under the Appfire Flow product. This profile is retained as a historical/defunct company record.
 url: https://raw.githubusercontent.com/api-evangelist/gitprime/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,14 +30,34 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-detail: >-
+  Acquired by Pluralsight in 2019 and rebranded Pluralsight Flow; acquired by Appfire from Pluralsight
+  in February 2025; Appfire Flow scheduled for discontinuation on 2027-12-31. gitprime.com no longer
+  resolves.
+x-acquired-by: pluralsight
+x-successor: appfire-flow
+x-successor-url: https://appfire.com/flow/info
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Software Engineering Analytics
+- Developer Productivity
+- Engineering Intelligence
+- Git Analytics
+- DevOps
+- Defunct
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
